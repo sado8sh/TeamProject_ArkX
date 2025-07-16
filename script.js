@@ -18,8 +18,8 @@ const favoriteCars = [
     description: "Italian beauty with a 710hp V8. Sleek and ultra-fast.",
   },
   {
-    name: "Mercedes-AMG GT",
-    owner: "Youssef",
+    name: "Mercedes-AMG GT63S",
+    owner: "SAAD",
     image: "https://autonews-mag.com/images/5NCR_wWWE2Qhd.jpg",
     description: "A powerful German beast with stunning design and power.",
   }

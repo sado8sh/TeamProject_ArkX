@@ -1,174 +1,178 @@
-/* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
-  scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0; 
+    scroll-behavior: smooth;
 }
 
-/* Hero Section */
 .hero {
-  height: 100vh;
-  background: url('https://www.wsupercars.com/wallpapers-regular/Lamborghini/2026-Lamborghini-Temerario-GT3-008-1080.jpg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+    height: 100vh;
+    background: url('https://www.wsupercars.com/wallpapers-regular/Lamborghini/2026-Lamborghini-Temerario-GT3-008-1080.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-content {
-  text-align: center;
-  color: #fff;
-  padding: 2rem;
-  max-width: 700px;
-  border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+    max-width: 700px;
+    border-radius: 12px;
 }
 
 .hero-content h1 {
-  font-size: 3.2rem;
-  margin-bottom: 1rem;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  color: #ddd;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 2rem;
 }
 
 .scroll-down {
-  text-decoration: none;
-  font-size: 2.5rem;
-  color: #fff;
-  animation: bounce 2s infinite;
-  display: inline-block;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #fff;
+    animation: bounce 2s infinite;
+    display: inline-block;
 }
 
 .scroll-down span {
-  display: inline-block;
-  transform: translateY(0);
+    display: inline-block;
+    transform: translateY(0);
 }
 
 @keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
 }
 
-/* Card Grid Section */
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 40px;
 }
 
-/* Card Design */
 .card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  overflow: hidden;
-  transition: transform 0.2s ease-in-out;
+    background: #1e1e1e; 
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.8);
 }
 
 .card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
 }
 
 .card-content {
-  padding: 20px;
+    padding: 20px;
 }
 
 .card-content h2 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  color: #2980b9;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #FFFF00;
 }
 
 .card-content p {
-  font-size: 0.95rem;
-  margin-bottom: 15px;
-  color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #ccc;
 }
 
 .card button {
-  padding: 8px 16px;
-  background-color: #2980b9;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: background-color 0.2s ease-in-out;
+    padding: 8px 16px;
+    background-color: #FFFF00; 
+    color: #121212;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .card button:hover {
-  background-color: #1f6398;
+    background-color: #FFFF00;
+    color: white;
 }
 
 .card button.liked {
-  background-color: #27ae60;
+    background-color: #27ae60;
+    color: white;
 }
 
-/* Mobile Optimization */
 @media (max-width: 600px) {
-  .hero-content h1 {
-    font-size: 2rem;
-  }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
 
-  .hero-content p {
-    font-size: 1rem;
-  }
+    .hero-content p {
+        font-size: 1rem;
+    }
 
-  .scroll-down {
-    font-size: 2rem;
-  }
+    .scroll-down {
+        font-size: 2rem;
+    }
 
-  .card-content h2 {
-    font-size: 1.2rem;
-  }
+    .card-content h2 {
+        font-size: 1.2rem;
+    }
 
-  .card-content p {
-    font-size: 0.9rem;
-  }
+    .card-content p {
+        font-size: 0.9rem;
+    }
 }
+
 @keyframes click-bounce {
-  0% {
-    transform: scale(1);
-  }
-  30% {
-    transform: scale(1.3);
-  }
-  60% {
-    transform: scale(0.8);
-  }
-  100% {
-    transform: scale(1);
-  }
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.3);
+    }
+    60% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.scroll-down.clicked span {
+    animation: click-bounce 0.4s ease;
 }
