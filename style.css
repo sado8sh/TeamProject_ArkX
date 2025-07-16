@@ -176,3 +176,19 @@ body {
 .scroll-down.clicked span {
     animation: click-bounce 0.4s ease;
 }
+.details-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #333;
+    color: #ffff00;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: background-color 0.3s;
+}
+
+.details-button:hover {
+    background-color: #555;
+    color: white;
+}
