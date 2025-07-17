@@ -1,36 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team's Favorite Cars</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team's Favorite Cars</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
 
-    <section class="hero">
-        <div class="overlay">
-            <div class="hero-content" data-aos="zoom-in">
-                <h1>🔥 Dream Cars of Our Team</h1>
-                <p>Discover the machines that drive our passion. Each team member picked their favorite car.</p>
-                <a href="#car-section" class="scroll-down"><span>↓</span></a>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <div class="hero-content" data-aos="zoom-in">
+        <h1>🔥 Dream Cars of Our Team</h1>
+        <p>Discover the machines that drive our passion. Each team member picked their favorite car.</p>
+        <a href="#car-section" class="scroll-down"><span>↓</span></a>
+      </div>
+    </div>
+  </section>
 
-    <main id="car-section" class="card-grid">
-    </main>
+  <!-- Cards Section -->
+  <main id="car-section" class="card-grid">
+    <!-- Cards will be injected here from script.js -->
+  </main>
 
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-        });
-    </script>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="https://arkx.group/images/logo/Logo-white.png" alt="Team Logo" />
+        <p>Dream Cars Team</p>
+      </div>
+
+      <!-- Team Members -->
+      <div class="footer-members">
+        <h3>Team Members</h3>
+        <ul>
+          <li>Hamza - 
+            <a href="https://github.com/hamzalafsioui" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com/in/hamzalafsioui" target="_blank">LinkedIn</a>
+          </li>
+          <li>Saad - 
+            <a href="https://github.com/saad" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com/in/saad" target="_blank">LinkedIn</a>
+          </li>
+          <li>Achraf - 
+            <a href="https://github.com/achrafezzaam" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/achraf-ezzaam/" target="_blank">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- About Us -->
+      <div class="footer-about">
+        <h3>About Us</h3>
+        <p>We are a group of car enthusiasts sharing our favorite dream cars with the world. Built with ❤️ by ARKx Students.</p>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Dream Cars Team. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
 </body>
 </html>
