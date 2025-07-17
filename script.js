@@ -131,3 +131,17 @@ document.addEventListener("DOMContentLoaded", () => {
   ownerFilter.addEventListener("change", applyFilters);
   likedFilter.addEventListener("change", applyFilters);
 });
+
+document.getElementById('searchInput').addEventListener('input', function () {
+  const searchTerm = this.value.toLowerCase();
+  const cards = document.querySelectorAll('#car-section .card');
+
+  cards.forEach(card => {
+    const title = card.querySelector('h2').textContent.toLowerCase();
+    if (title.includes(searchTerm)) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+});
